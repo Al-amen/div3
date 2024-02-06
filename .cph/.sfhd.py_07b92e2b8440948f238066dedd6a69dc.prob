@@ -1,0 +1,1 @@
+{"name":"Local: sfhd","url":"g:\\div3\\sfhd.py","tests":[{"id":1707232935287,"input":"5\n11\n0 0 0 1 0 2 0 3 1 1 4\n10\n0 0 0 0 0 1 0 1 1 0\n1\n0\n8\n0 1 2 3 4 5 6 7\n8\n0 0 0 0 0 0 0 0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"g:\\div3\\sfhd.py","group":"local","local":true}
