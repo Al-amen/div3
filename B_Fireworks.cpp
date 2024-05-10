@@ -7,15 +7,14 @@ typedef long long ll;
 #include <ext/pb_ds/assoc_container.hpp>
 using namespace __gnu_pbds;
 void CloSolveKori() {
-    string s;cin >> s;
-    int cnt1 = 0, cnt2=0;
-    for(int i = 0; i < s.size(); i++) {
-        if(s[i] == 'A')cnt1++;
-        else cnt2++;
-    }
-    if(cnt1 > cnt2) cout << "A\n";
-    else cout << "B\n";
+    ll a, b, m;
+    cin >> a >> b >> m;
+
+    ll x = (a + m) / a;
+    ll y = (b + m) / b;
+    cout << x + y << endl;
 }
+
 int main() {
 ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
  int tc; cin>>tc;
