@@ -1,29 +1,18 @@
-import math
+def solve_speed_equation(test_cases):
+    results = []
+    for A in test_cases:
+        B = A + 1
+        C = B + 1
+        results.append((B, C))
+    return results
 
-def gcd(a, b):
-    while b:
-        a, b = b, a % b
-    return a
+# Read input
+t = int(input())
+test_cases = [int(input()) for _ in range(t)]
 
-def lcm(a, b):
-    return a * b // gcd(a, b)
+# Solve for each test case
+results = solve_speed_equation(test_cases)
 
-def fireworks(t, test_cases):
-    for case in test_cases:
-        a, b, m = case
-        lcm_ab = lcm(a, b)
-        intervals = lcm_ab // a + lcm_ab // b - 1
-        total_minutes = intervals * m
-        print(total_minutes + 1)
-
-# Example usage
-t = 6
-test_cases = [
-    (6, 7, 4),
-    (3, 4, 10),
-    (7, 8, 56),
-    (5, 6, 78123459896),
-    (1, 1, 1),
-    (1, 1, 1000000000000000000)
-]
-fireworks(t, test_cases)
+# Print the results
+for B, C in results:
+    print(B, C)

@@ -20,7 +20,7 @@ void CloSolveKori()
 
     vector<int> ans;
     ans.push_back(mx);
-    for (int i = 0; i < n-1; i++)
+    for (int i = 0; i < n - 1; i++)
     {
         ans.push_back(ans.back() + v[i]);
     }
@@ -30,7 +30,6 @@ void CloSolveKori()
         cout << i << " ";
     }
     cout << endl;
-  
 }
 int main()
 {
